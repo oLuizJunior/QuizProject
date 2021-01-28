@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
@@ -9,6 +8,9 @@ import Footer from '../src/components/Footer/index';
 import GitHubCorner from '../src/components/GitHubCorner/index';
 import QuizBackground from '../src/components/QuizBackground/index';
 import QuizLogo from '../src/components/QuizLogo/index';
+import Input from '../src/components/Input/index';
+import Button from '../src/components/Button/index';
+import QuizContainer from '../src/components/QuizContainer/index';
 
 /* const BackgroundImage = styled.div`
   background-image: url(${db.bg});
@@ -16,17 +18,6 @@ import QuizLogo from '../src/components/QuizLogo/index';
   background-size: cover;
   background-position: center;
 `; */
-
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px){
-    margin: auto;
-    padding: 15px;
-  }
-`;
 
 export default function Home() {
   const router = useRouter();
@@ -37,40 +28,39 @@ export default function Home() {
       <Head>
         <title>Quiz Coder - Teste seu conhecimento</title>
       </Head>
-      <QuizLogo />
       <QuizContainer>
+        <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>Vamos ver se você é um bom Desenvolvedor!</h1>
+            <h1>Será que você é um bom Desenvolvedor?</h1>
           </Widget.Header>
 
           <Widget.Content>
-            <p>Vamos testar seu conhecimento sobre programação.</p>
+            <p>Teste seus conhecimentos sobre programação.</p>
 
-            <form onSubmit={function (infosDoEvento) {
+            <form onSubmit={(infosDoEvento) => {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=${name}`);
-              console.log('Fazendo uma subimissão por meio do react');
 
               // router manda para a proxima pagina
             }}
             >
-              <input
-                onChange={function (infosDoEvento) {
-                  setName(infosDoEvento.target.value);
-                }}
+              <Input
+                name="nomeDoUsuario"
+                onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
                 placeholder="Digite seu nome :)"
+                value={name}
               />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar
-              </button>
+              <Button type="submit" disabled={name.length === 0}>
+                {`Vamos lá ${name}`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
 
         <Widget>
           <Widget.Content>
-            <h1>Vamos ver o quão Geek você é!</h1>
+            <h1>Quizes da galera!</h1>
 
             <p>lorem ipsum dolor sic now slipknot</p>
           </Widget.Content>
