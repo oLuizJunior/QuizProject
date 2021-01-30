@@ -4,15 +4,13 @@
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://jaki-jezyk-programowania.pl/img/technologies/html&css.png",
+        "title": "HTML e CSS são linguagens de programação utilizadas no Desenvolvimento de Sites e sistemas web?",
         "description": "Essa é pra aquecer",
-        "answer": 2,
+        "answer": 1,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Verdadeiro",
+          "Falso"
         ]
       },
       {
@@ -24,10 +22,80 @@
            "background: linear-gradient(#e66465, #9198e5);",
            "background: gradient(#e66465, #9198e5);"
         ]
+      },
+      {
+        "image": "https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif",
+        "title": "Oque são linguagens fortemente tipadas?",
+        "description": "Está ficando mais interessante",
+        "answer": 1,
+        "alternatives": [
+           "São linguagens que possuem seus própios tipos de variáveis diferente aquelas que conhecemos.",
+           "São aquelas em que todas as variáveis tem um tipo específico e seus tipos são importantes para a linguagem."
+        ]
+      },
+      {
+        "image": "https://a.thumbs.redditmedia.com/zDOFJTXd6fmlD58VDGypiV94Leflz11woxmgbGY6p_4.png",
+        "title": "a Estrura do laço For em JavaScript esta correta na opção:",
+        "description": "Começando a complicar",
+        "answer": 2,
+        "alternatives": [
+           "for {declaracao [expressaoInicial]; [incremento]; [condicao] }",
+           "for ([expressaoInicial]) { [condicao] + [incremento] { declaracao }",
+           "for ([expressaoInicial]; [condicao]; [incremento]) { declaracao }",
+           "expressaoInicial { for [condicao]; [incremento] } declaracao"
+        ]
+      },
+      {
+        "image": "https://apexensino.com.br/wp-content/uploads/2017/11/programa%C3%A7%C3%A3o-orientada-a-objetos.jpeg",
+        "title": "O que é Programação Orientada a Objeto?",
+        "description": "Começando a complicar",
+        "answer": 3,
+        "alternatives": [
+           "É uma linguagem de programação",
+           "É uma forma de Arquitetura",
+           "É um modelo estruturado de Banco de Dados",
+           "É um paradigma de programação baseada no conceito de objetos."
+        ]
+      },
+      {
+        "image": "https://dba.com.br/wp-content/uploads/2018/09/59549639-300x300.jpg",
+        "title": "O que são bando de dados relacionais?",
+        "description": "Começando a complicar",
+        "answer": 2,
+        "alternatives": [
+           "São banco de dados que se relacionam com outros bancos e sistemas.",
+           "São banco de dados que se relacionam em uma rede específica",
+           "É um banco de dados que modela os dados de uma forma que eles sejam percebidos pelo usuário como tabelas, ou mais formalmente relações ",
+           "São bancos de dados que não conseguem se relacionar com outros tipos."
+        ]
+      },
+      {
+        "image": "https://lh3.googleusercontent.com/proxy/v_7Jv4V4MghXj8K_YrANdfve7fJlvQxbSlGM57AfMeRnqkKhce6973j0pPOz6xPZgKv2k45sRjxK4_ec4FPmweWkgsnBln2v_kuQe17DRotOAAH8qzerUsxBN0ezfz7c21tH9ViP-mqUm7XdAu9RBnaAadLKALrjg0no",
+        "title": "O PHP (um acrônimo recursivo para PHP: Hypertext Preprocessor) é uma linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento de aplicações desktop e que pode ser embutida dentro de outras linguagens como o C#.",
+        "description": "Começando a complicar",
+        "answer": 1,
+        "alternatives": [
+           "Verdadeiro",
+           "Falso"
+        ]
+      },
+      {
+        "image": "https://4.bp.blogspot.com/-T70oUCJqMFo/VbWao7jwJhI/AAAAAAAABZ0/UOTmSpPBbJE/s400/A1.gif",
+        "title": "O protoclo TCP é o protocolo responsável pelo transporte de dados na internet, atua na camada de transporte, é um protocolo seguro e confiavel.",
+        "description": "Começando a complicar",
+        "answer": 0,
+        "alternatives": [
+           "Verdadeiro",
+           "Falso"
+        ]
       }
     ],
     "external": [
-      ""
+      "https://theoffice-aluraquiz.joaovitordmoraes.vercel.app/",
+      "https://aluraquiz-coffee.leonardot07.vercel.app/",
+      "https://lotr-quiz.filipe1309.vercel.app/",
+      "https://quiz-valorant.johnatanivini.vercel.app/",
+      "https://aluraquiz-marvel.omariosouto.vercel.app/"
     ],
     "theme": {
       "colors": {
